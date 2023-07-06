@@ -1,8 +1,8 @@
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="xxx" -->
+<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="Playwright" -->
 
 # **Welcome to SFEIR School**
 
-## **XXX 200**
+## **Playwright**
 
 ##==##
 
