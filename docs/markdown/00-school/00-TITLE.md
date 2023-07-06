@@ -1,4 +1,4 @@
-<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="Playwright" -->
+<!-- .slide: class="first-slide" sfeir-level="2" sfeir-techno="" -->
 
 # **Welcome to SFEIR School**
 
