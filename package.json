@@ -1,0 +1,22 @@
+{
+  "name": "sfeir-school-playwright",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">  <img style=\"display:block\" width=\"20%\" height=\"20%\" src=\"./docs/assets/images/sfeir-school-logo.png\" alt=\"SFEIR School logo\"> </p>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:debug": "npx playwright test --debug",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.35.1"
+  }
+}

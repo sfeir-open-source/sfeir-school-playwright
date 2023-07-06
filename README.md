@@ -36,6 +36,19 @@ Workshops are in directory `steps` :
 
 // TODO
 
+## Commands
+
+### Run tests
+
+Run tests: `npx playwright test`
+Run tests in debug mode: `npx playwright test --debug`
+Run tests in headed mode: `npx playwright test --headed`
+Run tests in ui mode: `npx playwright test --ui`
+
+### Reporting
+
+Playwright reporter: `nx playwright show-report`
+
 ## Contributing
 
 ### Contributing Guidelines
