@@ -8,6 +8,13 @@ const MARKDOWN_PATH = `${DOCS_PATH}/markdown`;
 const IMAGES_PATH = `${DOCS_PATH}/assets/images`;
 const SCRIPT_SLIDES_JS_PATH = `${DOCS_PATH}/scripts/slides.js`;
 
+describe('should only have string as slide path', () => {
+  it.each(slides)('%s', (slidePath: string) => {
+    expect(slidePath).toBeDefined();
+    expect(slidePath).toBeTypeOf('string');
+  });
+});
+
 describe('should have only defined slides', () => {
   it.each(slides)('%s', (slidePath: string) => {
     expect(slidePath).toBeDefined();
@@ -108,7 +115,7 @@ describe('only valid class should be used', () => {
   });
 });
 
-const slides: string[] = (await import(getSlidesJsImport())).default().map((slide) => slide.path);
+const slides: string[] = (await import(getSlidesJsImport())).formation().map((slide) => slide.path);
 const labSlides = slides.filter((path) => path.includes('-lab-'));
 
 const allMdFiles = fs
@@ -125,7 +132,6 @@ function getSlidesJsImport() {
         .split('\n')
         .filter((line) => !line.includes('SfeirThemeInitializer'))
         .join('\n')
-        .replace('function formation() {', 'export default function formation() {')
     )
   );
 }

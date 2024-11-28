@@ -1,10 +1,10 @@
-# 01-workshop-example instructions
+# 01-run-test-suite instructions
 
 ## How to run?
 
 ```Bash
 cd ./steps
-npm run 01-workshop-example
+npm run 01-run-test-suite
 ```
 
 ## TODO
