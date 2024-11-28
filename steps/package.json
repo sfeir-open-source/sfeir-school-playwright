@@ -1,0 +1,13 @@
+{
+  "workspaces": [
+    "01-workshop-example",
+    "01-workshop-example-solution"
+  ],
+  "scripts": {
+    "01-workshop-example": "concurrently \"npm:api\" \"npm run dev --workspace=01-workshop-example\"",
+    "01-workshop-example-solution": "concurrently \"npm:api\" \"npm run dev --workspace=01-workshop-example-solution\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

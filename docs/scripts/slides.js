@@ -6,7 +6,7 @@ function schoolSlides() {
 }
 
 function introSlides() {
-  return ['intro/00-TITLE.md'];
+  return ['intro/00-TITLE.md', 'intro/00-lab-example.md'];
 }
 
 function formation() {
