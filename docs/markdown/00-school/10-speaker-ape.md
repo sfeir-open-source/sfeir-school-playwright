@@ -3,6 +3,9 @@
 # Présentation
 
 ![speaker](./assets/images/speakers/APE.jpg)
+![badge first-badge](./assets/images/speakers/adf.svg)
+![badge second-badge](./assets/images/speakers/ng-baguette.svg)
+![badge third-badge](./assets/images/speakers/ncc.png)
 ![company](./assets/images/logo-sfeir-blanc.png)
 
 ## Anthony PENA

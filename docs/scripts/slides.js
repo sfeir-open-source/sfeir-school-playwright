@@ -1,4 +1,4 @@
-// import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
+import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
 
 function schoolSlides() {
   const dir = '00-school';
@@ -20,18 +20,25 @@ function introSlides() {
   function appDiscovery() {
     return [];
   }
-  function jsRemindersFunctions() {
-    return [];
+  function jsReminders() {
+    return [
+      `${dir}/30-javascript-reminders.md`, //
+      `${dir}/31-arrow-functions.md`,
+      `${dir}/32-async-await.md`,
+      `${dir}/33-destructuration.md`,
+    ];
   }
-  function jsRemindersAsyncAwait() {
-    return [];
+  function tsReminders() {
+    return [
+      `${dir}/40-typescript-reminders.md`, //
+    ];
   }
   return [
     `${dir}/00-TITLE.md`, //
     installation(), //
     appDiscovery(), //
-    jsRemindersFunctions(), //
-    jsRemindersAsyncAwait(), //
+    jsReminders(), //
+    tsReminders(), //
   ];
 }
 
@@ -216,4 +223,4 @@ export function formation() {
     });
 }
 
-// SfeirThemeInitializer.init(formation);
+SfeirThemeInitializer.init(formation);
