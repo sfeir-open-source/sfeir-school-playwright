@@ -46,7 +46,12 @@ function gettingStartedSlides() {
   const dir = '02-getting-started';
 
   function testSyntax() {
-    return [];
+    return [
+      `${dir}/10-test-syntax.md`,
+      `${dir}/11-basic-test-syntax.md`,
+      `${dir}/12-grouping-tests.md`,
+      `${dir}/13-test-annotations.md`,
+    ];
   }
   function playwrightUi() {
     return [`${dir}/29-lab-test-suite-run.md`];

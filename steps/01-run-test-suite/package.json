@@ -1,3 +1,10 @@
 {
-  "name": "01-run-test-suite"
+  "name": "01-run-test-suite",
+  "scripts": {
+    "dev": "npx playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.1"
+  }
 }
