@@ -15,10 +15,14 @@ function schoolSlides() {
 function introSlides() {
   const dir = '01-intro';
   function installation() {
-    return [];
+    return [
+      `${dir}/10-installation.md`, //
+    ];
   }
   function appDiscovery() {
-    return [];
+    return [
+      `${dir}/20-app-discovery.md`, // TODO
+    ];
   }
   function jsReminders() {
     return [
@@ -57,10 +61,19 @@ function gettingStartedSlides() {
     return [`${dir}/29-lab-test-suite-run.md`];
   }
   function testStrategy() {
-    return [];
+    return [
+      `${dir}/30-test-strategy.md`,
+      `${dir}/31-test-pyramid.md`,
+      `${dir}/32-test-trophy.md`,
+      `${dir}/33-other-models.md`,
+      `${dir}/34-test-kinds.md`,
+    ];
   }
   function userCentricTests() {
-    return [];
+    return [
+      `${dir}/40-think-user-centric.md`, //
+      `${dir}/41-quiz.md`, //
+    ];
   }
   return [
     `${dir}/00-TITLE.md`, //
@@ -211,16 +224,16 @@ function componentsTestsSlides() {
 
 export function formation() {
   return [
-    schoolSlides(), // 00
-    introSlides(), // 01
-    gettingStartedSlides(), // 02
-    writingASimpleTestSlides(), // 03
-    interactWithThePageSlides(), // 04
-    testDataAndMocksSlides(), // 05
-    authenticationSlides(), // 06
-    testsScaffoldingSlides(), // 07
-    apiTestsSlides(), // 08
-    componentsTestsSlides(), // 09
+    schoolSlides(), // 00 - 15min
+    introSlides(), // 01 - 30min
+    gettingStartedSlides(), // 02 - 1h
+    writingASimpleTestSlides(), // 03 - 1h
+    interactWithThePageSlides(), // 04 - 45min
+    testDataAndMocksSlides(), // 05 - 45min
+    authenticationSlides(), // 06 - 45min
+    testsScaffoldingSlides(), // 07 - 45min
+    apiTestsSlides(), // 08 - 45min
+    componentsTestsSlides(), // 09 - 45min
   ]
     .flatMap((slidePaths) => slidePaths.flatMap((slidePath) => slidePath))
     .flatMap((slidePath) => {
