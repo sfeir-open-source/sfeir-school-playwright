@@ -227,13 +227,13 @@ export function formation() {
     schoolSlides(), // 00 - 15min
     introSlides(), // 01 - 30min
     gettingStartedSlides(), // 02 - 1h
-    writingASimpleTestSlides(), // 03 - 1h
-    interactWithThePageSlides(), // 04 - 45min
-    testDataAndMocksSlides(), // 05 - 45min
-    authenticationSlides(), // 06 - 45min
-    testsScaffoldingSlides(), // 07 - 45min
-    apiTestsSlides(), // 08 - 45min
-    componentsTestsSlides(), // 09 - 45min
+    writingASimpleTestSlides(), // 03 - 1h TODO
+    interactWithThePageSlides(), // 04 - 45min TODO
+    testDataAndMocksSlides(), // 05 - 45min TODO
+    authenticationSlides(), // 06 - 45min TODO
+    testsScaffoldingSlides(), // 07 - 45min TODO
+    apiTestsSlides(), // 08 - 45min TODO
+    componentsTestsSlides(), // 09 - 45min TODO
   ]
     .flatMap((slidePaths) => slidePaths.flatMap((slidePath) => slidePath))
     .flatMap((slidePath) => {

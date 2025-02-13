@@ -1,0 +1,1 @@
+- [ ] Generate one image for every product

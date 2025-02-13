@@ -1,0 +1,27 @@
+/* CSS COMPONENTS */
+
+.product-list {
+  display: grid;
+  grid-column-gap: var(--pico-grid-column-gap);
+  grid-row-gap: var(--pico-grid-row-gap);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(3, minmax(0%, 1fr));
+  }
+}
+
+article[data-kind='product-card'] {
+  display: flex;
+  flex-direction: column;
+  main {
+    flex: 1;
+    img {
+      margin-bottom: 0.75rem;
+    }
+  }
+  footer {
+    text-align: right;
+  }
+}
