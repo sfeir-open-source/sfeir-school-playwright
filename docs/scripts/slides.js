@@ -87,15 +87,30 @@ function gettingStartedSlides() {
 function writingASimpleTestSlides() {
   const dir = '03-writing-a-simple-test';
 
-  function targetDomElement() {
-    return [];
+  function whatIsDom() {
+    return [
+      `${dir}/10-what-is-dom.md`,
+      `${dir}/11-dom.md`,
+      `${dir}/12-dom-query-languages.md`,
+      `${dir}/13-is-dom-the-only-way.md`,
+    ];
+  }
+  function targetElements() {
+    return [
+      `${dir}/20-target-elements.md`, //
+      `${dir}/21-get-by-role.md`, //
+      `${dir}/22-get-by-text.md`, //
+      `${dir}/23-get-by-label.md`, //
+      `${dir}/24-get-by.md`, //
+    ];
   }
   function assertions() {
     return [];
   }
   return [
     `${dir}/00-TITLE.md`, //
-    targetDomElement(), //
+    whatIsDom(), //
+    targetElements(), //
     assertions(), //
     `${dir}/99-lab-write-first-tests.md`, //
   ];
