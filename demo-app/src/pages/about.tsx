@@ -5,13 +5,14 @@ import { Logo } from '../components/logo.js';
 import { css } from 'hono/css';
 
 export function About() {
+  const pageTitle = useTranslation({ en: 'About', fr: 'À Propos' });
   const aboutTitle = useTranslation({
     en: 'About La Boulangerie du Terroir',
     fr: 'À Propos de La Boulangerie du Terroir',
   });
   const aboutText = useTranslation({ en: englishVersion, fr: frenchVersion });
   return (
-    <BaseLayout>
+    <BaseLayout title={pageTitle}>
       <main>
         <h2>{aboutTitle}</h2>
         <Logo

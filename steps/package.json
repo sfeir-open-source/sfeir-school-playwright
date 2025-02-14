@@ -1,13 +1,14 @@
 {
   "workspaces": [
     "01-run-test-suite",
-    "01-run-test-suite-solution"
+    "01-run-test-suite-solution",
+    "02-writing-first-tests",
+    "02-writing-first-tests-solution"
   ],
   "scripts": {
-    "01-run-test-suite": "concurrently \"npm:api\" \"npm run dev --workspace=01-run-test-suite\"",
-    "01-run-test-suite-solution": "concurrently \"npm:api\" \"npm run dev --workspace=01-run-test-suite-solution\""
-  },
-  "dependencies": {
-    "concurrently": "^8.2.2"
+    "01-run-test-suite": "npm run dev --workspace=01-run-test-suite",
+    "01-run-test-suite-solution": "npm run dev --workspace=01-run-test-suite-solution",
+    "02-writing-first-tests": "npm run dev --workspace=02-writing-first-tests",
+    "02-writing-first-tests-solution": "npm run dev --workspace=02-writing-first-tests-solution"
   }
 }

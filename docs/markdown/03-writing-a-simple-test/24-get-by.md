@@ -14,7 +14,7 @@ page.getByPlaceholder('name@example.com', { exact: true });
 <!-- .element: class="big-code" -->
 
 Notes:
-- also user centric
+- depend on what is in the placeholder
 - by default match a text substring (exact avoid this) 
 
 Source: 
@@ -39,7 +39,7 @@ page.getByAltText('Playwright logo', { exact: true });
 <!-- .element: class="big-code" -->
 
 Notes:
-- also user centric
+- ok for accessibility but not for other users
 - by default match a text substring (exact avoid this) 
 
 Source: 
@@ -64,7 +64,6 @@ page.getByTitle('Issues count', { exact: true });
 <!-- .element: class="big-code" -->
 
 Notes:
-- also user centric
 - by default match a text substring (exact avoid this) 
 
 Source: 
@@ -88,7 +87,7 @@ page.getByTestId('directions');
 <!-- .element: class="big-code" -->
 
 Notes:
-- also user centric
+- absolutely NOT user centric
 - exact match only
 
 Source: 

@@ -6,7 +6,7 @@ import { usePastryTitle } from '../utils/lang.js';
 export function Pastry() {
   const title = usePastryTitle();
   return (
-    <BaseLayout>
+    <BaseLayout title={title}>
       <main>
         <h2>{title}</h2>
         <ProductList products={PRODUCTS.filter((p) => p.type === 'pastry')} />

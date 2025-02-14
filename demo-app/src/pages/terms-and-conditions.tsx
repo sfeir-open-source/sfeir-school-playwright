@@ -6,7 +6,7 @@ import { TERMS } from '../data/terms.js';
 export function TermsAndConditions() {
   const title = useTermsAndConditionsTitle();
   return (
-    <BaseLayout>
+    <BaseLayout title={title}>
       <main>
         <h2>{title}</h2>
         {TERMS}

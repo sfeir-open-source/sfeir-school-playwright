@@ -97,15 +97,22 @@ function writingASimpleTestSlides() {
   }
   function targetElements() {
     return [
-      `${dir}/20-target-elements.md`, //
-      `${dir}/21-get-by-role.md`, //
-      `${dir}/22-get-by-text.md`, //
-      `${dir}/23-get-by-label.md`, //
-      `${dir}/24-get-by.md`, //
+      `${dir}/20-target-elements.md`,
+      `${dir}/21-get-by-role.md`,
+      `${dir}/22-get-by-text.md`,
+      `${dir}/23-get-by-label.md`,
+      `${dir}/24-get-by.md`,
+      `${dir}/25-locator.md`,
     ];
   }
   function assertions() {
-    return [];
+    return [
+      `${dir}/30-assertions.md`, //
+      `${dir}/31-assert-context.md`, //
+      `${dir}/32-assert-content.md`, //
+      `${dir}/33-assert-value.md`, //
+      `${dir}/34-negative-assert.md`, //
+    ];
   }
   return [
     `${dir}/00-TITLE.md`, //
