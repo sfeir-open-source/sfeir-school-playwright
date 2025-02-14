@@ -164,19 +164,21 @@ function testDataAndMocksSlides() {
   const dir = '05-test-data-and-mocks';
 
   function dataStrategies() {
-    return [];
+    return [
+      `${dir}/10-data-strategies.md`, //
+    ];
   }
   function apiCallMocks() {
-    return [];
-  }
-  function tdd() {
-    return [];
+    return [
+      `${dir}/20-api-call-mocks.md`, //
+      `${dir}/21-how-to.md`, //
+      `${dir}/22-is-it-always-possible.md`, //
+    ];
   }
   return [
     `${dir}/00-TITLE.md`, //
     dataStrategies(), //
     apiCallMocks(), //
-    tdd(), //
     `${dir}/99-lab-error-use-cases-through-mocks.md`, //
   ];
 }
@@ -265,10 +267,10 @@ export function formation() {
     schoolSlides(), // 00 - 15min
     introSlides(), // 01 - 30min
     gettingStartedSlides(), // 02 - 1h
-    writingASimpleTestSlides(), // 03 - 1h TODO
-    interactWithThePageSlides(), // 04 - 45min TODO
-    testDataAndMocksSlides(), // 05 - 45min TODO
-    authenticationSlides(), // 06 - 45min TODO
+    writingASimpleTestSlides(), // 03 - 1h
+    interactWithThePageSlides(), // 04 - 45min
+    testDataAndMocksSlides(), // 05 - 45min
+    authenticationSlides(), // 06 - 45min
     testsScaffoldingSlides(), // 07 - 45min TODO
     apiTestsSlides(), // 08 - 45min TODO
     componentsTestsSlides(), // 09 - 45min TODO

@@ -18,4 +18,7 @@ fetch('/api/v1/discoveries')
       )
       .join('');
     target.innerHTML = html;
+  })
+  .catch(() => {
+    target.innerHTML = lang === 'fr' ? 'Une erreur est survenue... 😰' : 'An error occurred... 😰';
   });

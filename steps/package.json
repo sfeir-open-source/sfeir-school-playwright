@@ -5,7 +5,9 @@
     "02-writing-first-tests",
     "02-writing-first-tests-solution",
     "03-add-guestbook-message",
-    "03-add-guestbook-message-solution"
+    "03-add-guestbook-message-solution",
+    "04-mock-error-use-case",
+    "04-mock-error-use-case-solution"
   ],
   "scripts": {
     "01-run-test-suite": "npm run dev --workspace=01-run-test-suite",
@@ -13,6 +15,8 @@
     "02-writing-first-tests": "npm run dev --workspace=02-writing-first-tests",
     "02-writing-first-tests-solution": "npm run dev --workspace=02-writing-first-tests-solution",
     "03-add-guestbook-message": "npm run dev --workspace=03-add-guestbook-message",
-    "03-add-guestbook-message-solution": "npm run dev --workspace=03-add-guestbook-message-solution"
+    "03-add-guestbook-message-solution": "npm run dev --workspace=03-add-guestbook-message-solution",
+    "04-mock-error-use-case": "npm run dev --workspace=04-mock-error-use-case",
+    "04-mock-error-use-case-solution": "npm run dev --workspace=04-mock-error-use-case-solution"
   }
 }
