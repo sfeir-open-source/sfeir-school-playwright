@@ -1,4 +1,3 @@
-import { Header } from '../components/header.js';
 import { BaseLayout } from '../layouts/base.js';
 import { useTranslation } from '../utils/lang.js';
 import { Logo } from '../components/logo.js';

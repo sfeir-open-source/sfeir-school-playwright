@@ -3,7 +3,7 @@
 # Query the DOM with XPath
 
 ```
-//article[@data-kind='product-card']
+//article[@data-testid='product-card']
 ```
 <!-- .element: class="big-code" -->
 
@@ -19,7 +19,7 @@ Notes:
 # Query the DOM with CSS query selector
 
 ```
-.article[data-kind="product-card"]
+.article[data-testid="product-card"]
 ```
 <!-- .element: class="big-code" -->
 

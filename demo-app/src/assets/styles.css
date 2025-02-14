@@ -12,7 +12,7 @@
   }
 }
 
-article[data-kind='product-card'] {
+article[data-testid='product-card'] {
   display: flex;
   flex-direction: column;
   main {

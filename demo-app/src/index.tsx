@@ -14,6 +14,8 @@ import { TermsAndConditions } from './pages/terms-and-conditions.js';
 import { openAPISpecs } from 'hono-openapi';
 import { Pastry } from './pages/pastry.js';
 import { Bakery } from './pages/bakery.js';
+import { Guestbook, GuestbookSaved } from './pages/guestbook.js';
+import { GUESTBOOK } from './data/guestbook.js';
 
 const app = new Hono();
 
@@ -26,6 +28,18 @@ app
   .get('/', (c) => c.html(withLang(Home, c)))
   .get('/about', (c) => c.html(withLang(About, c)))
   .get('/bakery', (c) => c.html(withLang(Bakery, c)))
+  .get('/guestbook', (c) => c.html(withLang(Guestbook, c)))
+  .post('/guestbook', async (c) => {
+    const body = await c.req.formData();
+    // simulate variable network latency
+    await new Promise((r) => setTimeout(r, Math.floor(Math.random() * 50) * 100));
+    GUESTBOOK.push({
+      author: body.get('author')?.toString()!,
+      message: body.get('message')?.toString()!,
+      date: body.get('date')?.toString()!,
+    });
+    return c.html(withLang(GuestbookSaved, c));
+  })
   .get('/pastry', (c) => c.html(withLang(Pastry, c)))
   .get('/terms-and-conditions', (c) => c.html(withLang(TermsAndConditions, c)))
   // api

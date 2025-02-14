@@ -24,7 +24,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const label = useTranslation(product.label);
   const description = useTranslation(product.description);
   return (
-    <article data-kind="product-card">
+    <article data-testid="product-card">
       <header>{label}</header>
       <main>
         <img src={product.img} />

@@ -1,9 +1,9 @@
 import { css } from 'hono/css';
 import { Discovery } from '../components/discovery.js';
-import { Header } from '../components/header.js';
 import { Logo } from '../components/logo.js';
 import { BaseLayout } from '../layouts/base.js';
 import { useTranslation } from '../utils/lang.js';
+import { LastGuestbookMessage } from '../components/last-guestbook-message.js';
 
 export function Home() {
   const titlePrefix = useTranslation({ en: 'Welcome on the website of', fr: 'Bienvenue sur le site de' });
@@ -30,6 +30,7 @@ export function Home() {
       </div>
       <hr />
       <Discovery />
+      <LastGuestbookMessage />
     </BaseLayout>
   );
 }

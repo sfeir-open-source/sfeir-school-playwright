@@ -15,7 +15,6 @@ export function useUserLang() {
 
 export function useTranslation(translations: Record<SupportedLanguage, JSX.Element | string>) {
   const lang = useUserLang();
-  console.log({ lang });
   return translations[lang] ?? translations['en'];
 }
 

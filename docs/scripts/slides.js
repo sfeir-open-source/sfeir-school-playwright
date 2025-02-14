@@ -126,21 +126,37 @@ function writingASimpleTestSlides() {
 function interactWithThePageSlides() {
   const dir = '04-interact-with-the-page';
 
-  function clicTypeAndCopyPaste() {
-    return [];
+  function clickTypeAndCopyPaste() {
+    return [
+      `${dir}/10-mouse-and-keyboard.md`,
+      `${dir}/11-mouse.md`,
+      `${dir}/12-keyboard.md`,
+      `${dir}/13-copy-paste.md`,
+      `${dir}/14-others.md`,
+    ];
   }
   function waitLikeAUser() {
-    return [];
+    return [
+      `${dir}/20-wait-like-a-user.md`, //
+      `${dir}/21-wait-visible-element.md`, //
+      `${dir}/22-wait-url.md`, //
+      `${dir}/23-wait-event.md`, //
+    ];
   }
   function manipulateElementList() {
-    return [];
+    return [
+      `${dir}/30-manipulate-element-list.md`, //
+      `${dir}/31-assert-all.md`, //
+      `${dir}/32-target-one.md`, //
+      `${dir}/33-act-on-all.md`, //
+    ];
   }
   return [
     `${dir}/00-TITLE.md`, //
-    clicTypeAndCopyPaste(), //
+    clickTypeAndCopyPaste(), //
     waitLikeAUser(), //
     manipulateElementList(), //
-    `${dir}/99-lab-add-or-update-data.md`, //
+    `${dir}/99-lab-add-data.md`, //
   ];
 }
 
