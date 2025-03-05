@@ -7,7 +7,9 @@
     "03-add-guestbook-message",
     "03-add-guestbook-message-solution",
     "04-mock-error-use-case",
-    "04-mock-error-use-case-solution"
+    "04-mock-error-use-case-solution",
+    "05-auth",
+    "05-auth-solution"
   ],
   "scripts": {
     "01-run-test-suite": "npm run dev --workspace=01-run-test-suite",
@@ -17,6 +19,8 @@
     "03-add-guestbook-message": "npm run dev --workspace=03-add-guestbook-message",
     "03-add-guestbook-message-solution": "npm run dev --workspace=03-add-guestbook-message-solution",
     "04-mock-error-use-case": "npm run dev --workspace=04-mock-error-use-case",
-    "04-mock-error-use-case-solution": "npm run dev --workspace=04-mock-error-use-case-solution"
+    "04-mock-error-use-case-solution": "npm run dev --workspace=04-mock-error-use-case-solution",
+    "05-auth": "npm run dev --workspace=05-auth",
+    "05-auth-solution": "npm run dev --workspace=05-auth-solution"
   }
 }

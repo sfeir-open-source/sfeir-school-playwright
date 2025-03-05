@@ -35,7 +35,7 @@ export function useAuthInfo() {
   const authCookie = getCookie(context, COOKIE_NAME);
   if (authCookie) {
     const tokenInfo = decodeToken(authCookie);
-    if (tokenInfo.expire.getTime() < Date.now()) {
+    if (tokenInfo.expire.getTime() > Date.now()) {
       return tokenInfo;
     } else {
       deleteCookie(context, COOKIE_NAME);

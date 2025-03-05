@@ -186,16 +186,28 @@ function testDataAndMocksSlides() {
 function authenticationSlides() {
   const dir = '06-authentication';
 
-  function authForEveryTests() {
-    return [];
+  function howToLogin() {
+    return [
+      `${dir}/10-how-to-login.md`, //
+    ];
   }
-  function authForSomeTests() {
-    return [];
+  function authStrategies() {
+    return [
+      `${dir}/20-auth-strategies.md`, //
+      `${dir}/21-auth-for-every-tests.md`, //
+      `${dir}/22-auth-for-some-tests.md`, //
+    ];
+  }
+  function workersConsiderations() {
+    return [
+      `${dir}/30-workers-considerations.md`, //
+    ];
   }
   return [
     `${dir}/00-TITLE.md`, //
-    authForEveryTests(), //
-    authForSomeTests(), //
+    howToLogin(), //
+    authStrategies(), //
+    workersConsiderations(), //
     `${dir}/99-lab-auth-for-a-test-suite.md`, //
   ];
 }

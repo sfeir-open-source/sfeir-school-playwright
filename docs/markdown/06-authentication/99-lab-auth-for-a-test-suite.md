@@ -6,12 +6,8 @@
 
 <br>
 
-1. TODO
-2. TODO
-3. TODO
-
-<br>
-
-- TODO
+1. Create a new test file `admin/guestbook.spec.ts`
+2. Create some tests for the login page ;
+3. Create some tests for the admin guestbook page ;
 
 ### npm run 05-auth
