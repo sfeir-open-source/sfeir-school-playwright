@@ -18,6 +18,7 @@ export function BaseLayout({ children, title }: BaseLayoutProps) {
         <meta name="color-scheme" content="light dark" />
         <title>{pageTitle}</title>
         <link href="/assets/pico.min.css" rel="stylesheet" />
+        <link href="/assets/pico.colors.min.css" rel="stylesheet" />
         <link href="/assets/styles.css" rel="stylesheet" />
         <Style />
       </head>

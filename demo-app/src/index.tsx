@@ -16,6 +16,9 @@ import { Pastry } from './pages/pastry.js';
 import { Bakery } from './pages/bakery.js';
 import { Guestbook, GuestbookSaved } from './pages/guestbook.js';
 import { GUESTBOOK } from './data/guestbook.js';
+import { Login } from './pages/login.js';
+import { ProvideHonoContext } from './utils/context.js';
+import { AdminGuestbook } from './pages/admin-guestbook.js';
 
 const app = new Hono();
 
@@ -25,10 +28,11 @@ app
   .use('/assets/*', serveStatic({ root: './src/' }))
   .use(languageDetector({ supportedLanguages: ['en', 'fr'], fallbackLanguage: 'en' }))
   // html pages
-  .get('/', (c) => c.html(withLang(Home, c)))
-  .get('/about', (c) => c.html(withLang(About, c)))
-  .get('/bakery', (c) => c.html(withLang(Bakery, c)))
-  .get('/guestbook', (c) => c.html(withLang(Guestbook, c)))
+  .get('/', (c) => c.html(withContexts(Home, c)))
+  .get('/about', (c) => c.html(withContexts(About, c)))
+  .get('/admin/guestbook', (c) => c.html(withContexts(AdminGuestbook, c)))
+  .get('/bakery', (c) => c.html(withContexts(Bakery, c)))
+  .get('/guestbook', (c) => c.html(withContexts(Guestbook, c)))
   .post('/guestbook', async (c) => {
     const body = await c.req.formData();
     // simulate variable network latency
@@ -38,10 +42,12 @@ app
       message: body.get('message')?.toString()!,
       date: body.get('date')?.toString()!,
     });
-    return c.html(withLang(GuestbookSaved, c));
+    return c.html(withContexts(GuestbookSaved, c));
   })
-  .get('/pastry', (c) => c.html(withLang(Pastry, c)))
-  .get('/terms-and-conditions', (c) => c.html(withLang(TermsAndConditions, c)))
+  .get('/login', (c) => c.html(withContexts(Login, c)))
+  .post('/login', (c) => c.html(withContexts(Login, c)))
+  .get('/pastry', (c) => c.html(withContexts(Pastry, c)))
+  .get('/terms-and-conditions', (c) => c.html(withContexts(TermsAndConditions, c)))
   // api
   .get('/api/v1/discoveries', getDiscoveriesDoc(), (c) => c.json(getDiscoveries()))
   // swagger
@@ -71,10 +77,12 @@ showRoutes(app, {
 
 serve({ fetch: app.fetch, port });
 
-function withLang(Inner: FC, c: Context) {
+function withContexts(Inner: FC, context: Context) {
   return (
-    <ProvideLanguage lang={c.get('language') as SupportedLanguage}>
-      <Inner />
-    </ProvideLanguage>
+    <ProvideHonoContext context={context}>
+      <ProvideLanguage lang={context.get('language') as SupportedLanguage}>
+        <Inner />
+      </ProvideLanguage>
+    </ProvideHonoContext>
   );
 }
