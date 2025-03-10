@@ -9,7 +9,9 @@
     "04-mock-error-use-case",
     "04-mock-error-use-case-solution",
     "05-auth",
-    "05-auth-solution"
+    "05-auth-solution",
+    "06-scaffolding",
+    "06-scaffolding-solution"
   ],
   "scripts": {
     "01-run-test-suite": "npm run dev --workspace=01-run-test-suite",
@@ -21,6 +23,8 @@
     "04-mock-error-use-case": "npm run dev --workspace=04-mock-error-use-case",
     "04-mock-error-use-case-solution": "npm run dev --workspace=04-mock-error-use-case-solution",
     "05-auth": "npm run dev --workspace=05-auth",
-    "05-auth-solution": "npm run dev --workspace=05-auth-solution"
+    "05-auth-solution": "npm run dev --workspace=05-auth-solution",
+    "06-scaffolding": "npm run dev --workspace=06-scaffolding",
+    "06-scaffolding-solution": "npm run dev --workspace=06-scaffolding-solution"
   }
 }

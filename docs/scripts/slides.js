@@ -215,23 +215,31 @@ function authenticationSlides() {
 function testsScaffoldingSlides() {
   const dir = '07-tests-scaffolding';
   function hooks() {
-    return [];
+    return [
+      `${dir}/10-hooks.md`, //
+    ];
   }
   function parametrizedTests() {
-    return [];
-  }
-  function fixtures() {
-    return [];
+    return [
+      `${dir}/20-parametrized-tests.md`, //
+    ];
   }
   function pageObjectPattern() {
-    return [];
+    return [
+      `${dir}/30-page-object-pattern.md`, //
+    ];
+  }
+  function fixtures() {
+    return [
+      `${dir}/40-fixtures.md`, //
+    ];
   }
   return [
     `${dir}/00-TITLE.md`, //
     hooks(), //
     parametrizedTests(), //
-    fixtures(), //
     pageObjectPattern(), //
+    fixtures(), //
     `${dir}/99-lab-writing-structured-tests.md`, //
   ];
 }
