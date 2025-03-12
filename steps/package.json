@@ -13,7 +13,9 @@
     "06-scaffolding",
     "06-scaffolding-solution",
     "07-api-tests",
-    "07-api-tests-solution"
+    "07-api-tests-solution",
+    "08-component-tests",
+    "08-component-tests-solution"
   ],
   "scripts": {
     "01-run-test-suite": "npm run dev --workspace=01-run-test-suite",
@@ -29,6 +31,8 @@
     "06-scaffolding": "npm run dev --workspace=06-scaffolding",
     "06-scaffolding-solution": "npm run dev --workspace=06-scaffolding-solution",
     "07-api-tests": "npm run dev --workspace=07-api-tests",
-    "07-api-tests-solution": "npm run dev --workspace=07-api-tests-solution"
+    "07-api-tests-solution": "npm run dev --workspace=07-api-tests-solution",
+    "08-component-tests": "npm run test-ct --workspace=08-component-tests",
+    "08-component-tests-solution": "npm run test-ct --workspace=08-component-tests-solution"
   }
 }

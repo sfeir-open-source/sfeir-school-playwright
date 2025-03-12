@@ -29,7 +29,13 @@ app
   // middlewares
   .use('/favicon.ico', serveStatic({ path: './src/assets/favicon.ico' }))
   .use('/assets/*', serveStatic({ root: './src/' }))
-  .use(languageDetector({ supportedLanguages: ['en', 'fr'], fallbackLanguage: 'en' }))
+  .use(
+    languageDetector({
+      supportedLanguages: ['en', 'fr'],
+      fallbackLanguage: 'en',
+      cookieOptions: { httpOnly: false },
+    })
+  )
   // html pages
   .get('/', (c) => c.html(withContexts(Home, c)))
   .get('/about', (c) => c.html(withContexts(About, c)))

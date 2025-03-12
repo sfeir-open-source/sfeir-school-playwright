@@ -275,15 +275,27 @@ function componentsTestsSlides() {
   const dir = '09-components-tests';
 
   function componentTestsReminder() {
-    return [];
+    return [
+      `${dir}/10-component-test-reminder.md`, //
+    ];
   }
   function mountAComponentForATest() {
-    return [];
+    return [
+      `${dir}/20-mount-a-component.md`, //
+    ];
+  }
+  function patterns() {
+    return [
+      `${dir}/30-patterns.md`, //
+      `${dir}/31-check-component-content.md`, //
+      `${dir}/32-listen-events.md`, //
+    ];
   }
   return [
     `${dir}/00-TITLE.md`, //
     componentTestsReminder(), //
     mountAComponentForATest(), //
+    patterns(), //
     `${dir}/99-lab-writing-a-component-test-suite.md`, //
   ];
 }

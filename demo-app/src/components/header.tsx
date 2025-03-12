@@ -23,6 +23,7 @@ export function Header() {
         <li>
           <a href="/about">{aboutLink}</a>
         </li>
+        <li id="vue-language-switch"></li>
       </ul>
     </nav>
   );

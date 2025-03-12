@@ -26,6 +26,9 @@ export function BaseLayout({ children, title }: BaseLayoutProps) {
         <Header />
         {children}
         <Footer />
+        <script src="https://unpkg.com/react@17/umd/react.development.js" defer></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" defer></script>
+        <script src="/assets/ReactLanguageSwitch.js" type="module" defer></script>
       </body>
     </html>
   );

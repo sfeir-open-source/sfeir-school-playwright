@@ -1,13 +1,14 @@
-<!-- .slide: class="exercice" -->
+# 08-component-tests instructions
 
-# Component tests
+## How to run?
 
-## Lab
+```Bash
+cd ./steps
+npm run 08-component-tests
+```
 
-<br>
+## TODO
 
 1. Runs existing test in `src/components/select.spec.tsx` ;
 2. Add a test to check the `Select` component shows every options ;
 3. Add a test to check when you select an option, the value is emitted ;
-
-### npm run 08-component-tests
