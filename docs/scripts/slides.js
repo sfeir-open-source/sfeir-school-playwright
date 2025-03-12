@@ -248,19 +248,25 @@ function apiTestsSlides() {
   const dir = '08-api-tests';
 
   function makeApiCall() {
-    return [];
+    return [
+      `${dir}/10-make-api-call.md`, //
+    ];
   }
   function responseValidation() {
-    return [];
+    return [
+      `${dir}/20-response-validation.md`, //
+    ];
   }
-  function mixBetweenApiTestAndE2ETests() {
-    return [];
+  function mixBetweenApiTestsAndE2ETests() {
+    return [
+      `${dir}/30-mix-between-api-tests-and-e2e-tests.md`, //
+    ];
   }
   return [
     `${dir}/00-TITLE.md`, //
     makeApiCall(), //
     responseValidation(), //
-    mixBetweenApiTestAndE2ETests(), //
+    mixBetweenApiTestsAndE2ETests(), //
     `${dir}/99-lab-writing-an-api-test-suite.md`, //
   ];
 }

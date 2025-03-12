@@ -6,12 +6,10 @@
 
 <br>
 
-1. TODO
-2. TODO
-3. TODO
-
-<br>
-
-- TODO
+1. Create a new file `tests/api.spec.ts` ;
+2. Create a test that check `GET /api/app/health` ;
+3. Create a test that check `GET /api/app/info` ;
+4. Create a test that check `GET /api/app/mappings` ;
+5. Create a test that check `GET /api/v1/discoveries` ;
 
 ### npm run 07-api-tests

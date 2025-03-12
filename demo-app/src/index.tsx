@@ -19,6 +19,9 @@ import { GUESTBOOK } from './data/guestbook.js';
 import { Login } from './pages/login.js';
 import { ProvideHonoContext } from './utils/context.js';
 import { AdminGuestbook } from './pages/admin-guestbook.js';
+import { getHealth, getHealthDoc } from './api/app/health.js';
+import { getInfo, getInfoDoc } from './api/app/info.js';
+import { getMappings, getMappingsDoc } from './api/app/mappings.js';
 
 const app = new Hono();
 
@@ -49,10 +52,13 @@ app
   .get('/pastry', (c) => c.html(withContexts(Pastry, c)))
   .get('/terms-and-conditions', (c) => c.html(withContexts(TermsAndConditions, c)))
   // api
+  .get('/api/app/health', getHealthDoc(), (c) => c.json(getHealth()))
+  .get('/api/app/info', getInfoDoc(), (c) => c.json(getInfo()))
+  .get('/api/app/mappings', getMappingsDoc(), (c) => c.json(getMappings(app)))
   .get('/api/v1/discoveries', getDiscoveriesDoc(), (c) => c.json(getDiscoveries()))
   // swagger
   .get(
-    '/doc',
+    '/api/doc',
     openAPISpecs(app, {
       documentation: {
         info: {
@@ -64,9 +70,9 @@ app
       },
     })
   )
-  .get('/swagger', swaggerUI({ url: '/doc' }))
-  .get('/swagger-ui', swaggerUI({ url: '/doc' }))
-  .get('/swagger-ui/index.html', swaggerUI({ url: '/doc' }));
+  .get('/api/swagger', swaggerUI({ url: '/api/doc' }))
+  .get('/api/swagger-ui', swaggerUI({ url: '/api/doc' }))
+  .get('/api/swagger-ui/index.html', swaggerUI({ url: '/api/doc' }));
 
 const port = 3000;
 console.log(`Server is running on http://localhost:${port}`);
