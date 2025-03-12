@@ -4,7 +4,7 @@ export class AdminGuestbookPage {
     constructor(private page: Page) {}
 
     manageGuestbookButton() {
-        return this.page.locator("button", { hasText: "Manage guestbook" });
+        return this.page.getByRole("button", { name: "Manage guestbook" });
     }
 
     title() {

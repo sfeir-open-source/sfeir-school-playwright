@@ -30,7 +30,7 @@ test.describe("new message", () => {
     const message = "This is a message from the future! " +
       Math.floor(Math.random() * 1_000_000);
     await newGuestbookMessageFormPage.fillForm({ author, message });
-    await newGuestbookMessageFormPage.submitButton();
+    await newGuestbookMessageFormPage.submitButton().click();
 
     await expect(newGuestbookMessageFormPage.submitSuccessMessage())
       .toBeVisible();
