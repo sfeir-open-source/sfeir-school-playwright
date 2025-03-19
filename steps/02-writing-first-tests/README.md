@@ -12,8 +12,8 @@ npm run 02-writing-first-tests
 1. Ensure Playwright UI is started and app is running when going to http://localhost:3000
 2. Create a new test file named `first-tests.spec.ts`
 3. Create one test that go to home page, then check the URL is `http://localhost:3000`
-4. Create a second test that go to /about page, then check the page title include "A propos" in French
-5. Create a third test that go to /bakery page, then check the page title include "Bakery" in English
+4. Create a second test that go to /about page, then check the page title includes "A propos" in French
+5. Create a third test that go to /bakery page, then check the page title includes "Bakery" in English
 
 Notes:
 - you can force the demo app language with the URL using the query param `lang` with `en` or `fr` as value (example: `/bakery?lang=en` will open the `/bakery` page with language forced to `en`)

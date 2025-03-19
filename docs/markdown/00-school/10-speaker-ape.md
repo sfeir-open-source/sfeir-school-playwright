@@ -1,6 +1,6 @@
 <!-- .slide: class="speaker-slide" -->
 
-# Présentation
+# Presentation
 
 ![speaker](./assets/images/speakers/APE.jpg)
 ![badge first-badge](./assets/images/speakers/adf.svg)

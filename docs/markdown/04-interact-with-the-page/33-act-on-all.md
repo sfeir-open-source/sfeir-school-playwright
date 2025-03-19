@@ -6,7 +6,7 @@
 
 <!-- .slide: class="with-code" -->
 
-# Waiting an http request was done
+# Waiting for the end of an http request
 
 ```TypeScript
 for (const item of await page.getByRole('listitem').all()) {

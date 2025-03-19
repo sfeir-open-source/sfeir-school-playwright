@@ -16,8 +16,8 @@ npm init playwright@latest
 
 Then follow CLI questions to automatically:
 - add correct dependencies
-- setup browsers
-- setup your system
+- set up browsers
+- set up your system
 - create example tests we can copy
 - create basic files
 - create configuration file with default settings

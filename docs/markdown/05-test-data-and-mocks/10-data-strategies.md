@@ -28,7 +28,7 @@ Notes:
 
 ##==##
 
-# Mock only difficult use case with Playwright
+# Mock only difficult use cases with Playwright
 
 ![center h-800](./assets/images/05-test-data-and-mocks/strat-mock-some-calls.png)
 
@@ -39,9 +39,9 @@ Notes:
 
 <!-- .slide: class="quote-slide" -->
 
-## More you mock,
-## More your are stable,
-## BUT less you test the reality.
+## The more you mock,
+## The more your tests will be stable,
+## BUT the less you test the reality.
 
 Notes:
 - always a balance between stability / realism / testability

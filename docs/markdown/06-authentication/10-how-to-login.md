@@ -15,7 +15,7 @@ test('should be able to login', ({ page }) => {
     await page.getByRole("textbox", { name: "Password" }).fill('SuperSecure1');
     await page.getByRole("button", { name: "Login" }).click();
 
-    // do action with the login account
+    // do action with the logged in account
 });
 ```
 
@@ -53,7 +53,7 @@ async function fillLoginForm(page: Page, email: string, password: string) {
 test('should be able to login', ({ page }) => {
     await fillLoginForm(page, 'john@doe.com', 'SuperSecure1');
 
-    // do action with the login account
+    // do action with the logged in account
 });
 
 ```
@@ -77,8 +77,8 @@ test.beforeEach(({page}) => {
     await fillLoginForm(page, 'john@doe.com', 'SuperSecure1');
 });
 
-test('should be login to access XXXX', ({ page }) => {
-    // do action with the login account
+test('should be logged in to access XXXX', ({ page }) => {
+    // do action with the logged in account
 });
 
 ```

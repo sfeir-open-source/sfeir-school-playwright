@@ -6,7 +6,7 @@
 
 <!-- .slide: class="with-code" -->
 
-# Waiting we are on a specific page
+# Waiting for a specific page
 
 ```TypeScript
 await page.goto('/login');

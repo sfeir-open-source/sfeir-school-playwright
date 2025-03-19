@@ -10,8 +10,8 @@
 
 ```TypeScript [1-5|7-12]
 test.describe('auth', () => {
-    test('should be login to access XXXX', ({ page }) => {
-        // do action with the login account
+    test('should be logged in to access XXXX', ({ page }) => {
+        // do action with the logged in account
     });
 });
 
@@ -38,11 +38,11 @@ Notes:
 # Specify auth for every test/group
 
 ```TypeScript
-function withUserLoggedIn() {
+function withLoggedInUser() {
   test.use({ storageState: 'playwright/.auth/user.json' });
 }
 
-function withGuessUser() {
+function withGuestUser() {
     test.use({ storageState: { cookies: [], origins: [] } });
 }
 ```
@@ -57,14 +57,14 @@ function withGuessUser() {
 
 ```TypeScript [1-6|8-14]
 test.describe('auth', () => {
-    withUserLoggedIn();
-    test('should be login to access XXXX', ({ page }) => {
-        // do action with the login account
+    withLoggedInUser();
+    test('should be logged in to access XXXX', ({ page }) => {
+        // do action with the logged in account
     });
 });
 
 test.describe('not auth', () => {
-    withGuessUser();
+    withGuestUser();
     test('should not see XXXX when not logged in', ({ page }) => {
         // do action without login
     });
@@ -118,7 +118,7 @@ function withAdminUser() {
 function withSimpleUser() {
   test.use({ storageState: 'playwright/.auth/user.json' });
 }
-function withGuessUser() {
+function withGuestUser() {
     test.use({ storageState: { cookies: [], origins: [] } });
 }
 ```
@@ -134,8 +134,8 @@ function withGuessUser() {
 ```TypeScript [1-6|8-12]
 test.describe('auth', () => {
     test.beforeEach(withLogin());
-    test('should be login to access XXXX', ({ page }) => {
-        // do action with the login account
+    test('should be logged in to access XXXX', ({ page }) => {
+        // do action with the logged in account
     });
 });
 

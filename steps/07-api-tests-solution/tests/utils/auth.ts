@@ -42,12 +42,12 @@ export const adminUserAuthFile = absolutePath(
     "../../playwright/.auth/laurent.json",
 );
 
-export function withUserLoggedIn() {
+export function withLoggedInUser() {
     test.use({
         storageState: absolutePath("../../playwright/.auth/laurent.json"),
     });
 }
 
-export function withGuessUser() {
+export function withGuestUser() {
     test.use({ storageState: { cookies: [], origins: [] } });
 }

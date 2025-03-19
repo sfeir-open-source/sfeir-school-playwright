@@ -67,8 +67,8 @@ Notes:
 # One account for every tests (on test side)
 
 ```TypeScript
-test('should be login to access XXXX', ({ page }) => {
-    // do action with the login account
+test('should be logged in to access XXXX', ({ page }) => {
+    // do action with the logged in account
 });
 ```
 

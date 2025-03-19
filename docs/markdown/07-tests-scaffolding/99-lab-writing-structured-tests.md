@@ -11,6 +11,6 @@
 3. Create a page object `GuestbookPage` and use it
 4. Create a page object `AdminGuestbookPage` and use it
    Bonus:
-5. Transform every page objects as fixtures
+5. Transform every page object as fixtures
 
 ### npm run 06-scaffolding

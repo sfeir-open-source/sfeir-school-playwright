@@ -50,7 +50,7 @@ Notes:
 
 <!-- .slide: class="with-code" -->
 
-# Edit real response response
+# Edit real request's response
 
 ```TypeScript [2-5]
 test('...', async ({ page }) => {

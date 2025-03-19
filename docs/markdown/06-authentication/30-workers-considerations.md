@@ -25,11 +25,11 @@ Notes:
 
 <br/>
 
-## Can you guess what will be the issue?
+## Can you guess what will be the issue? 🤔
 
 <br/>
 
-## Playwright offer mechanisms for that! 😃
+## Playwright offers mechanisms for that! 😃
 
 ##==##
 
@@ -53,7 +53,7 @@ Notes:
 
 ##==##
 
-# Advance solution: one account per parallel worker
+# Advanced solution: one account per parallel worker
 
 Check the doc: https://playwright.dev/docs/auth#moderate-one-account-per-parallel-worker
 

@@ -6,7 +6,7 @@
 
 <!-- .slide: class="with-code" -->
 
-# Waiting an element appear
+# Waiting for an element to appear
 
 ```TypeScript
 await expect(page.getByRole('heading', { label: 'About' }).toBeVisible();
@@ -21,7 +21,7 @@ Notes:
 
 <!-- .slide: class="with-code" -->
 
-# Waiting an element disappear
+# Waiting for an element to disappear
 
 ```TypeScript
 await expect(page.getByRole('heading', { label: 'About' }).toBeHidden();

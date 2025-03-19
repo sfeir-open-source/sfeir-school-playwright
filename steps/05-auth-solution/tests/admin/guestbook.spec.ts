@@ -4,7 +4,7 @@ import {
     isLoggedIn,
     LAURENT,
     withLogin,
-    withUserLoggedIn,
+    withLoggedInUser,
 } from "../utils/auth";
 
 test.describe("admin", () => {
@@ -36,7 +36,7 @@ test.describe("admin", () => {
 
         test.describe("logged in as admin", () => {
             test.describe.configure({ mode: "serial" });
-            withUserLoggedIn();
+            withLoggedInUser();
 
             test('should show "Manage guestbook" button on home', async ({ page }) => {
                 await page.goto("/");

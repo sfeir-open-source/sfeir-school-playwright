@@ -6,7 +6,7 @@
 
 <!-- .slide: class="with-code" -->
 
-# Waiting an http request was done
+# Waiting for the end of an http request
 
 ```TypeScript
 const requestPromise = page.waitForRequest('**/*logo*.png');

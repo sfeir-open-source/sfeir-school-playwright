@@ -22,7 +22,7 @@ Notes:
 
 ## Example 2 
 ## <br/>
-## Filling the login form (fields with label "E-mail" and "Password"), click on "Login" button, then redirection on home page with profile name in the heading
+## Fill the login form (fields with label "E-mail" and "Password"), click on "Login" button, then get redirected on the home page with your profile name in the heading
 
 Notes:
 - ask the student what do they think of this test
@@ -34,7 +34,7 @@ Notes:
 
 ## Example 3 
 ## <br/>
-## Click on `div > div > button`, wait 15s, check "Here your export link" is visible
+## Click on `div > div > button`, wait 15s, check that "Here your export link" is visible
 
 Notes:
 - ask the student what do they think of this test
@@ -48,7 +48,7 @@ Notes:
 
 ## Example 4 
 ## <br/>
-## Click on button "Export", wait the message "Here your export link" is visible, this message should be a link starting with `https://my-export.com/files/`
+## Click on button "Export", wait for the message "Here your export link" to be visible, this message should be a link starting with `https://my-export.com/files/`
 
 Notes:
 - ask the student what do they think of this test
@@ -62,7 +62,7 @@ Notes:
 
 ## Example 5 
 ## <br/>
-## Go to book list page, should have 8 `.card` elements in the document
+## Go to book list page, it should have 8 `.card` elements in the document
 
 Notes:
 - ask the student what do they think of this test

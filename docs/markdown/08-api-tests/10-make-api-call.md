@@ -48,7 +48,7 @@ Notes:
 
 <!-- .slide: class="with-code" -->
 
-# Exemple 1: simulate submitting a login form
+# Example 1: simulate submitting a login form
 
 ```TypeScript
 const res = await request.post('/api/login', {
@@ -67,7 +67,7 @@ Notes:
 
 <!-- .slide: class="with-code" -->
 
-# Exemple 1: simulate submitting a login form (FormData version)
+# Example 1: simulate submitting a login form (FormData version)
 
 ```TypeScript
 const form = new FormData();
@@ -82,7 +82,7 @@ const res = await request.post('/api/login', { form });
 
 <!-- .slide: class="with-code" -->
 
-# Exemple 2: make an authenticate POST call
+# Example 2: make an authenticated POST call
 
 ```TypeScript
 const res = await request.post('/api/v1/secret-user-data', {
@@ -96,7 +96,7 @@ const res = await request.post('/api/v1/secret-user-data', {
 
 <!-- .slide: class="with-code" -->
 
-# Exemple 3: cleanup data after running a UI test
+# Example 3: cleanup data after running a UI test
 
 ```TypeScript
 const res = await request.delete(`/api/v1/messages/${messageIdCreatedDuringTheTest}`);
