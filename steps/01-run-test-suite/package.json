@@ -4,7 +4,7 @@
     "dev": "npx playwright test --ui"
   },
   "devDependencies": {
-    "@playwright/test": "^1.50.1",
+    "@playwright/test": "^1.51.1",
     "@types/node": "^22.13.4"
   }
 }

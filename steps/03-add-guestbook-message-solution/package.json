@@ -5,7 +5,7 @@
     "start-demo": "npm run dev --prefix ../../demo-app"
   },
   "devDependencies": {
-    "@playwright/test": "^1.50.1",
+    "@playwright/test": "^1.51.1",
     "@types/node": "^22.13.4"
   }
 }
