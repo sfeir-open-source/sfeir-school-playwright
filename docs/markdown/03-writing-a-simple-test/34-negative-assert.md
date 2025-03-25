@@ -1,6 +1,6 @@
 <!-- .slide: class="transition" -->
 
-# Assert value
+# Negative assert
 
 ##==##
 
