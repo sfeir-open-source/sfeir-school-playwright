@@ -8,6 +8,7 @@ function schoolSlides() {
     `${dir}/02-repository.md`,
     `${dir}/10-speaker-ape.md`,
     `${dir}/10-speaker-tsl.md`,
+    `${dir}/10-speaker-mva.md`,
     `${dir}/11-tour-de-table.md`,
     `${dir}/20-what-we-will-do.md`,
   ];
