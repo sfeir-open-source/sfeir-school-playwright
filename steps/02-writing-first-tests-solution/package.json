@@ -1,0 +1,11 @@
+{
+  "name": "02-writing-first-tests-solution",
+  "scripts": {
+    "dev": "npx playwright test --ui",
+    "start-demo": "npm run dev --prefix ../../demo-app"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.4"
+  }
+}

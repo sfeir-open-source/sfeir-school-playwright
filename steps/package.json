@@ -1,13 +1,38 @@
 {
   "workspaces": [
-    "01-workshop-example",
-    "01-workshop-example-solution"
+    "01-run-test-suite",
+    "01-run-test-suite-solution",
+    "02-writing-first-tests",
+    "02-writing-first-tests-solution",
+    "03-add-guestbook-message",
+    "03-add-guestbook-message-solution",
+    "04-mock-error-use-case",
+    "04-mock-error-use-case-solution",
+    "05-auth",
+    "05-auth-solution",
+    "06-scaffolding",
+    "06-scaffolding-solution",
+    "07-api-tests",
+    "07-api-tests-solution",
+    "08-component-tests",
+    "08-component-tests-solution"
   ],
   "scripts": {
-    "01-workshop-example": "concurrently \"npm:api\" \"npm run dev --workspace=01-workshop-example\"",
-    "01-workshop-example-solution": "concurrently \"npm:api\" \"npm run dev --workspace=01-workshop-example-solution\""
-  },
-  "dependencies": {
-    "concurrently": "^8.2.2"
+    "01-run-test-suite": "npm run dev --workspace=01-run-test-suite",
+    "01-run-test-suite-solution": "npm run dev --workspace=01-run-test-suite-solution",
+    "02-writing-first-tests": "npm run dev --workspace=02-writing-first-tests",
+    "02-writing-first-tests-solution": "npm run dev --workspace=02-writing-first-tests-solution",
+    "03-add-guestbook-message": "npm run dev --workspace=03-add-guestbook-message",
+    "03-add-guestbook-message-solution": "npm run dev --workspace=03-add-guestbook-message-solution",
+    "04-mock-error-use-case": "npm run dev --workspace=04-mock-error-use-case",
+    "04-mock-error-use-case-solution": "npm run dev --workspace=04-mock-error-use-case-solution",
+    "05-auth": "npm run dev --workspace=05-auth",
+    "05-auth-solution": "npm run dev --workspace=05-auth-solution",
+    "06-scaffolding": "npm run dev --workspace=06-scaffolding",
+    "06-scaffolding-solution": "npm run dev --workspace=06-scaffolding-solution",
+    "07-api-tests": "npm run dev --workspace=07-api-tests",
+    "07-api-tests-solution": "npm run dev --workspace=07-api-tests-solution",
+    "08-component-tests": "npm run test-ct --workspace=08-component-tests",
+    "08-component-tests-solution": "npm run test-ct --workspace=08-component-tests-solution"
   }
 }
