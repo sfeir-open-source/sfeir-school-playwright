@@ -7,6 +7,7 @@ function schoolSlides() {
     `${dir}/01-wifi.md`,
     `${dir}/02-repository.md`,
     `${dir}/10-speaker-ape.md`,
+    `${dir}/10-speaker-tsl.md`,
     `${dir}/11-tour-de-table.md`,
     `${dir}/20-what-we-will-do.md`,
   ];
