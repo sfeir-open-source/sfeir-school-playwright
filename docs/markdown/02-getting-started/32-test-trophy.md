@@ -6,7 +6,7 @@
 
 # Test Trophy
 
-![center h-700](./assets/images/02-getting-started/trophy.webp)
+![](./assets/images/02-getting-started/trophy.webp 'center h-700')
 
 Notes:
 - explain the trophy

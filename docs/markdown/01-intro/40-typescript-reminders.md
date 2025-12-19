@@ -53,15 +53,13 @@ Notes:
   - union type = enum with zero runtime cost
 
 ##==##
+<!-- .slide: class="tc-multiple-columns"-->
 
-<!-- .slide: class="two-column-layout"-->
+##++##
 
 ## Generics
-
-##--##
-
-<!-- .slide: class="with-code" -->
-
+##++##
+##++## class="with-code"
 
 ```TypeScript
 interface Box<T> {
@@ -74,11 +72,8 @@ type PiePastry = { cooked: boolean };
 ```
 
 <!-- .element: class="big-code" -->
-
-##--##
-
-<!-- .slide: class="with-code" -->
-
+##++##
+##++## class="with-code"
 
 ```TypeScript
 // OK
@@ -93,4 +88,4 @@ const box: Box<PiePastry>
 ```
 
 <!-- .element: class="big-code" -->
-
+##++##

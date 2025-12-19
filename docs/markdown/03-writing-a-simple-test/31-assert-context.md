@@ -13,7 +13,7 @@ await expect(page).toHaveURL('http://localhost:3000');
 ```
 <!-- .element: class="big-code" -->
 
-![center h-1000](./assets/images/03-writing-simple-test/url.png)
+![](./assets/images/03-writing-simple-test/url.png 'center h-1000')
 
 Notes:
 - full URL by default
@@ -29,10 +29,11 @@ await expect(page).toHaveURL(/\/bakery/);
 ```
 <!-- .element: class="big-code" -->
 
-![center h-1000](./assets/images/03-writing-simple-test/url.png)
+![](./assets/images/03-writing-simple-test/url.png 'center h-1000')
 
 Notes:
 - check if the url contains "/bakery"
+
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -44,7 +45,7 @@ await expect(page).toHaveURL(/\/bakery$/);
 ```
 <!-- .element: class="big-code" -->
 
-![center h-1000](./assets/images/03-writing-simple-test/url.png)
+![](./assets/images/03-writing-simple-test/url.png 'center h-1000')
 
 Notes:
 - check if the url ends with "/bakery"
@@ -60,11 +61,11 @@ await expect(page).toHaveTitle("La Boulangerie du Terroir");
 ```
 <!-- .element: class="big-code" -->
 
-![center h-1000](./assets/images/03-writing-simple-test/page-title.png)
+![](./assets/images/03-writing-simple-test/page-title.png 'center h-1000')
 
 Notes:
 - exact match by default
-  
+
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -76,7 +77,7 @@ await expect(page).toHaveTitle(/Boulangerie/);
 ```
 <!-- .element: class="big-code" -->
 
-![center h-1000](./assets/images/03-writing-simple-test/page-title.png)
+![](./assets/images/03-writing-simple-test/page-title.png 'center h-1000')
 
 Notes:
 - for partial match use RegExp

@@ -46,7 +46,6 @@ export default defineConfig({
 ```
 <!-- .element: class="big-code" -->
 
-
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -65,8 +64,6 @@ test('...', () => {
 })
 ```
 <!-- .element: class="big-code" -->
-
-
 
 ##==##
 

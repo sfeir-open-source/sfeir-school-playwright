@@ -14,3 +14,6 @@ npm run 03-add-guestbook-message
 3. In `last messages` test group, create a test that checks all messages contain one message, one author and one date
 4. In `new message` test group, create a test that go to publish message page (through the "Publish a message" link), fill the form, submit the form, check we see the thank's message, then go to the home to check the message appears
 
+Bonus:
+
+- ensure new message test work in French and English with parametrized it

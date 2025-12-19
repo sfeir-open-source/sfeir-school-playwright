@@ -6,7 +6,7 @@
 
 # Ice Cream model
 
-![center h-700](./assets/images/02-getting-started/ice-cream.png)
+![](./assets/images/02-getting-started/ice-cream.png 'center h-700')
 
 [Ice cream model - **Alister B Scott**](https://alisterscott.github.io/TestingPyramids.html)
 
@@ -19,7 +19,7 @@ Notes:
 
 # Test Diamond
 
-![center h-700](./assets/images/02-getting-started/diamond.png)
+![](./assets/images/02-getting-started/diamond.png 'center h-700')
 
 [Design Master Ltd](https://www.linkedin.com/pulse/pyramid-diamond-honeycomb-trophy-find-testing-strategy-fits/)
 
@@ -32,7 +32,7 @@ Notes:
 
 # Honeycomb
 
-![center h-700](./assets/images/02-getting-started/honeycomb.png)
+![](./assets/images/02-getting-started/honeycomb.png 'center h-700')
 
 [Design Master Ltd](https://www.linkedin.com/pulse/pyramid-diamond-honeycomb-trophy-find-testing-strategy-fits/)
 
