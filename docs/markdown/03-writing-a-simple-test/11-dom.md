@@ -1,6 +1,6 @@
 # DOM = Document Object Model
 
-![center h-700](./assets/images/03-writing-simple-test/DOM-model.svg.png)
+![](./assets/images/03-writing-simple-test/DOM-model.svg.png 'center h-700')
 
 Notes:
 - representation of the page structure

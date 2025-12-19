@@ -16,7 +16,7 @@ Notes:
 
 # Test Pyramid
 
-![center h-700](./assets/images/02-getting-started/pyramide-2.png)
+![](./assets/images/02-getting-started/pyramide-2.png 'center h-700')
 
 Notes:
 - a lot of vision of what is the test pyramid
@@ -26,7 +26,7 @@ Notes:
 
 # Test Pyramid
 
-![center h-700](./assets/images/02-getting-started/pyramide-3.png)
+![](./assets/images/02-getting-started/pyramide-3.png 'center h-700')
 
 Notes:
 - a lot of vision of what is the test pyramid
@@ -36,7 +36,7 @@ Notes:
 
 # Test Pyramid of <strong>Mike Cohn</strong> (the original one)
 
-![center h-700](./assets/images/02-getting-started/pyramide-mike-cohn.png)
+![](./assets/images/02-getting-started/pyramide-mike-cohn.png 'center h-700')
 
 Notes:
 - original one

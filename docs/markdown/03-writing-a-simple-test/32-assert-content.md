@@ -58,7 +58,6 @@ Notes:
 - ask students
 - assert KO
 
-
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -86,7 +85,6 @@ await expect(page.getByRole('button', { name: 'Login' })).toBeVisible();
 Notes:
 - ask students
 - assert OK
-
 
 ##==##
 
@@ -144,7 +142,6 @@ Notes:
 - ask students
 - assert OK
 
-
 ##==##
 
 <!-- .slide: class="with-code" -->
@@ -172,7 +169,6 @@ await expect(page.getByRole('textbox')).toHaveCount(3);
 Notes:
 - ask students
 - assert OK
-
 
 ##==##
 
