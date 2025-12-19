@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/sfeir-open-source/sfeir-school-playwright",
   "dependencies": {
-    "sfeir-school-theme": "file:../../sfeir-school-theme/dist"
+    "sfeir-school-theme": "^4.0.0-rc-15"
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
